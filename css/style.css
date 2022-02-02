@@ -1,0 +1,21 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Variables Globales CSS */
+:root {
+    --header-height: 48px;
+
+    /* Colores */
+
+    --first-color: #3E0E12;
+    --first-color-dark: #2F0A0D;
+    --text-color: #524748;
+    --first-color-light: #7B6F71;
+    --first-color-lighten: #FBF9F9;
+
+    /* Letra y tamaño */
+
+    --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 40px;
+    --h1-font-size: 24px;
+}
