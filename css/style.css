@@ -3,23 +3,137 @@
 
 /* Variables Globales CSS */
 :root {
-    --header-height: 48px;
+    --header-height: 40px;
 
     /* Colores */
 
-    --first-color: #3E0E12;
-    --first-color-dark: #2F0A0D;
-    --text-color: #524748;
-    --first-color-light: #7B6F71;
+    --first-color: #171717;
+    --first-color-dark: #282828;
+    --text-color: #010101;
+    --text-first-color: #FEF200;
+    --first-color-light: #5D5D5D;
     --first-color-lighten: #FBF9F9;
-
+    --firt-color-con: #ECECEC;
+    
     /* Letra y tamaño */
 
     --body-font: 'Poppins', sans-serif;
+    --normal-font-size: 16px;
+    --small-font-size: 12px;
     --biggest-font-size: 40px;
-    --h1-font-size: 24px;
 }
 
-body{
-    
+*{
+    font-family: var(--body-font);
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+/* Propiedades header */
+
+.header{
+    background-color: var(--first-color-lighten);
+    margin: var(--header-height);
+    color: var(--text-color);
+}
+
+.header_container{
+    display: flex;
+}
+
+/* Lado izquierdo */
+
+.header_left_side {
+    background-color: var(--first-color);
+    width: 30%;
+}
+
+.header_left_side a{
+    display: flex;
+    justify-content: center;
+    color: var(--first-color-lighten);
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+/* Lado derecho */
+
+.header_rigth_side{
+    width: 70%;
+    background-color: var(--first-color-light);
+}
+
+.header_text{
+    position: relative;
+    left: 60%;
+    top: 30%;
+    color: var(--first-color-lighten);
+    font-size: 1vw;
+}
+
+.header_text .occupation{
+    background-color: var(--text-first-color);
+    color: var(--first-color);
+    text-align: center;
+}
+
+/* Barra de navegavion */
+
+.nav{
+    background-color: var(--first-color-light);
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.nav_container{
+    flex: auto;
+    text-align: center;
+}
+
+.nav_container a{
+    color: var(--first-color-lighten);
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+.nav_img{
+    height: 90%;
+    width:100%;
+}
+
+.nav_container a:hover{
+    color: var(--text-first-color);
+}
+
+/* Contenido de la pagina */
+
+.section{
+    display: flex;
+    background-color: var(--firt-color-con);
+    margin: var(--header-height);
+}
+
+.section_container_img{
+    display: flex;
+    margin: var(--header-height);
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_container_img img{
+    max-width: 50%;
+    box-shadow: -30px -30px black;
+}
+
+.section_container_text{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: var(--header-height);
+}
+
+.section_container_text h2{
+    text-align: center;
 }
